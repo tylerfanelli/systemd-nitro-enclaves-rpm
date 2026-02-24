@@ -7,7 +7,7 @@ Release:        1%{?dist}
 Summary:        AWS Nitro Enclaves systemd services
 
 License:        Apache-2.0
-URL:            https://github.com/tylerfanelli/systemd-nitro-enclaves.git
+URL:            https://github.com/virtee/systemd-nitro-enclaves.git
 Source0:        %{name}-%{version}.tar.gz
 
 # Nitro enclaves are only available on x86_64 and aarch64 instances.

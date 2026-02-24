@@ -1,5 +1,4 @@
 %bcond check 1
-%global debug_package %{nil}
 
 Name:           systemd-nitro-enclaves
 Version:        0.1.0
@@ -7,9 +6,10 @@ Release:        1%{?dist}
 Summary:        AWS Nitro Enclaves systemd services
 
 License:        Apache-2.0
-URL:            https://github.com/virtee/systemd-nitro-enclaves.git
-Source0:        %{name}-%{version}.tar.gz
+URL:            https://github.com/virtee/systemd-nitro-enclaves
+Source:         %{url}/archive/refs/tags/v%{version}.tar.gz
 
+BuildArch:      noarch
 BuildRequires:  make
 BuildRequires:  systemd-rpm-macros
 
@@ -30,9 +30,9 @@ systemd services for AWS Nitro Enclaves.}
 %files
 %license LICENSE
 %{_unitdir}/nitro-enclaves-allocator.service
-%{_bindir}/nitro-enclaves-allocator
 %{_sysconfdir}/nitro_enclaves
 %{_sysconfdir}/nitro_enclaves/allocator.yaml
+%{_libexecdir}/nitro-enclaves-allocator
 
 %changelog
 * Fri Feb 20 2026 Tyler Fanelli <tfanelli@redhat.com> - 0.1.0-1

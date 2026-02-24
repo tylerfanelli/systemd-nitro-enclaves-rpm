@@ -10,9 +10,6 @@ License:        Apache-2.0
 URL:            https://github.com/virtee/systemd-nitro-enclaves.git
 Source0:        %{name}-%{version}.tar.gz
 
-# Nitro enclaves are only available on x86_64 and aarch64 instances.
-ExclusiveArch:  x86_64 aarch64
-
 BuildRequires:  make
 BuildRequires:  systemd-rpm-macros
 

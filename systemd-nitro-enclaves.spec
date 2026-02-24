@@ -7,8 +7,8 @@ Release:        1%{?dist}
 Summary:        AWS Nitro Enclaves systemd services
 
 License:        Apache-2.0
-URL:            https://github.com/virtee/systemd-nitro-enclaves.git
-Source0:        %{name}-%{version}.tar.gz
+URL:            https://github.com/virtee/systemd-nitro-enclaves
+Source0:        ${url}/archive/refs/tags/v%{version}.tar.gz
 
 BuildRequires:  make
 BuildRequires:  systemd-rpm-macros

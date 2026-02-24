@@ -30,7 +30,6 @@ systemd services for AWS Nitro Enclaves.}
 %files
 %license LICENSE
 %{_unitdir}/nitro-enclaves-allocator.service
-%{_bindir}/nitro-cli-config
 %{_bindir}/nitro-enclaves-allocator
 %{_sysconfdir}/nitro_enclaves
 %{_sysconfdir}/nitro_enclaves/allocator.yaml

@@ -27,6 +27,15 @@ systemd services for AWS Nitro Enclaves.}
 %install
 %make_install PREFIX=%{buildroot}
 
+%post
+%systemd_post nitro-enclaves-allocator.service
+
+%preun
+%systemd_preun nitro-enclaves-allocator.service
+
+%postun
+%systemd_postun_with_restart nitro-enclaves-allocator.service
+
 %files
 %license LICENSE
 %{_unitdir}/nitro-enclaves-allocator.service

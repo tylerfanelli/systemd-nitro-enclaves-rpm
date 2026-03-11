@@ -7,7 +7,7 @@ Summary:        AWS Nitro Enclaves systemd services
 
 License:        Apache-2.0
 URL:            https://github.com/virtee/systemd-nitro-enclaves
-Source:         %{url}/archive/refs/tags/v%{version}.tar.gz
+Source:         %{url}/archive/v%{version}/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  make

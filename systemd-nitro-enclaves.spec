@@ -13,10 +13,8 @@ BuildArch:      noarch
 BuildRequires:  make
 BuildRequires:  systemd-rpm-macros
 
-%global _description %{expand:
-systemd services for AWS Nitro Enclaves.}
-
-%description %{_description}
+%description
+systemd services for AWS Nitro Enclaves.
 
 %prep
 %autosetup -n %{name}-%{version}

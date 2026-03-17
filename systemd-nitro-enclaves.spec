@@ -41,7 +41,7 @@ systemd services for AWS Nitro Enclaves.}
 %dir %{_unitdir}
 %{_unitdir}/nitro-enclaves-allocator.service
 %dir %{_sysconfdir}/nitro_enclaves
-%config %{_sysconfdir}/nitro_enclaves/allocator.yaml
+%config(noreplace) %{_sysconfdir}/nitro_enclaves/allocator.yaml
 %{_libexecdir}/nitro-enclaves-allocator
 
 %changelog

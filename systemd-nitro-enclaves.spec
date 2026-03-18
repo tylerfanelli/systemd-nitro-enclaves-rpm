@@ -1,5 +1,3 @@
-%bcond check 1
-
 Name:           systemd-nitro-enclaves
 Version:        0.1.0
 Release:        %autorelease
@@ -20,7 +18,6 @@ systemd services for AWS Nitro Enclaves.
 %autosetup -n %{name}-%{version}
 
 %build
-# nothing
 
 %install
 %make_install PREFIX=%{buildroot}
